@@ -1,0 +1,26 @@
+Input: A list of programs (each with duration, allowed broadcast time, audience reach, and ad revenue).
+Output: A time-based schedule showing which program is assigned to each time slot.
+
+Steps:
+
+1. Create an empty schedule covering all time slots of the day (e.g., 24 slots for 24 hours).
+
+2. Define which time slots are considered prime-time (e.g., 6 PM to 10 PM).
+
+3. Sort the list of programs based on audience reach and ad revenue, highest first.
+
+4. For each program in the sorted list:
+
+Check the time range it’s allowed to be broadcast.
+
+Try to find a block of free time slots within that range that matches the program’s duration.
+
+Give preference to prime-time slots for popular programs.
+
+5. If a suitable slot is found, assign the program to those time slots in the schedule.
+
+6. Mark those time slots as taken so other programs aren’t placed there.
+
+7. Continue until all programs are considered or no free slots are left.
+
+8. Return or display the final schedule showing which program plays at what time.
