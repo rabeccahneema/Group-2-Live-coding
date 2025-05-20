@@ -1,0 +1,20 @@
+Input: A list of projects (each with required skills), a list of teams (each with team members, their skills, preferences, and availability).
+Output: A list showing which team is assigned to which project, considering skills, preferences, and availability.
+
+Steps:
+
+1. Start by listing all the projects and their required skills.
+
+2. List all the teams along with each member's skills, preferences, and availability.
+
+3. Sort the projects by importance or urgency (optional, based on goal).
+
+4. For each project, go through the list of teams.
+
+5. Check if a team has all the skills needed for the project.
+ 
+6. Also check if the team is available and prefers that kind of project.
+
+7. If multiple teams match, choose the one with the strongest match (best skill fit and preference).
+
+8. Assign the project to the selected team and mark them as busy.
